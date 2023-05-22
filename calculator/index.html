@@ -8,32 +8,30 @@
     <title>Calculator</title>
 </head>
 <body>
-   <div class="screen-1"> 
-<div class="screen-2">
-    <div class="screen-top" id="screen-top">
+   <div class="screen-btn">
+        <div class="screen">
 
-</div>
-<div class="screen-bottom" id="screen-bottom"></div>
+            <div class="screen-bottom" id="screen-bottom"><input type="text" readonly id="screen-out"></div>
 
-</div>
-<button class="clear" id="cover-2">CE</button>
-<button class="delete" id="delete">del</button>
-<button class="share" id="divide">/</button>
-<button id="numbers">1</button>
-<button id="numbers">2</button>
-<button id="numbers">3</button>
-<button class="times" id="function">*</button>
-<button id="numbers">4</button>
-<button id="numbers">5</button>
-<button id="numbers">6</button>
-<button class="add" id="function">+</button>
-<button id="numbers">7</button>
-<button id="numbers">8</button>
-<button id="numbers">9</button>
-<button class="minus" id="function">-</button>
-<button id="numbers">.</button>
-<button id="numbers">0</button>
-<button class="equal" id="cover-2">=</button>
+        </div>
+        <button class="clear" id="cover-2" onclick="remover()">CE</button>
+        <button class="delete" id="delete" onclick="del()">del</button>
+        <button class="function" id="divide" onclick="dev()">/</button>
+        <button onclick="display(1)" id="numbers">1</button>
+        <button onclick="display(2)" id="numbers">2</button>
+        <button onclick="display(3)" id="numbers">3</button>
+        <button class="function" id="function" onclick="times()">*</button>
+        <button onclick="display(4)" id="numbers">4</button>
+        <button onclick="display(5)" id="numbers">5</button>
+        <button onclick="display(6)" id="numbers">6</button>
+        <button class="function" id="function" onclick="add()">+</button>
+        <button onclick="display(7)" id="numbers">7</button>
+        <button onclick="display(8)" id="numbers">8</button>
+        <button onclick="display(9)" id="numbers">9</button>
+        <button class="function" id="function" onclick="minus()">-</button>
+        <button onclick="display('.')" id="numbers">.</button>
+        <button onclick="display(0)" id="numbers">0</button>
+        <button class="function" id="cover-2" onclick="calculate()">=</button>
    </div>
    
    
